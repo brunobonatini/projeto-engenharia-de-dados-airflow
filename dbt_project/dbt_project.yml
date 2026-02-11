@@ -1,0 +1,21 @@
+name: 'logistica'
+version: '1.0'
+profile: 'logistica'
+
+config-version: 2
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  logistica:
+    bronze:
+      +materialized: view
+    silver:
+      +materialized: view
+    gold:
+      +materialized: table

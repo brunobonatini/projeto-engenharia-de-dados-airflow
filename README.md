@@ -35,5 +35,6 @@ docker compose up -d --build
 git clone <repo>
 cd projeto-engenharia-de-dados-airflow
 
+---
 
 # Projeto em construção...

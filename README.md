@@ -31,7 +31,6 @@ docker compose up -d --build
 
 ### 1️⃣ Clonar o projeto
 
-```bash
 git clone <repo>
 cd projeto-engenharia-de-dados-airflow
 

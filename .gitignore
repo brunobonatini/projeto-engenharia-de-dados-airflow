@@ -1,14 +1,22 @@
 # ===============================
-# Python
+# Git
+# ===============================
+.git
+.gitignore
+
+# ===============================
+# Python cache
 # ===============================
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
 *.so
 *.egg-info/
-*.egg
-.env
+
+# ===============================
+# Virtual environments
+# ===============================
 .venv/
 venv/
 
@@ -25,17 +33,10 @@ htmlcov/
 .ipynb_checkpoints/
 
 # ===============================
-# Airflow
+# Airflow logs (CRÍTICO)
 # ===============================
 logs/
-airflow.cfg
 airflow.db
-
-# ===============================
-# Docker
-# ===============================
-*.log
-docker-compose.override.yml
 
 # ===============================
 # DBT
@@ -43,6 +44,12 @@ docker-compose.override.yml
 dbt_project/target/
 dbt_project/dbt_packages/
 dbt_project/logs/
+
+# ===============================
+# MinIO / Data lake
+# ===============================
+minio-data/
+data/
 
 # ===============================
 # IDE
@@ -57,7 +64,11 @@ dbt_project/logs/
 Thumbs.db
 
 # ===============================
-# MinIO / Data Lake
+# Environment variables
 # ===============================
-minio-data/
-data/
+.env
+
+# ===============================
+# Docker artifacts
+# ===============================
+docker-compose.override.yml
